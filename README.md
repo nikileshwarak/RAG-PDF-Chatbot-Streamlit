@@ -18,9 +18,9 @@ Chat with **multiple PDF files** using a conversational **RAG (Retrieval-Augment
 ##  Screenshots
 
 
-![image](https://github.com/user-attachments/assets/9278e006-ba9b-44a3-94d8-56fd2d146541)
+![image](https://github.com/user-attachments/assets/78eb3344-efe0-4ee7-96cb-d80b672c4a40)
 
-![image](https://github.com/user-attachments/assets/ae6bc4c1-641c-4f97-83fe-56675a2b38a7)
+![image](https://github.com/user-attachments/assets/12b07545-83bb-44cc-ac92-625dc0f3e2cc)
 
 ![image](https://github.com/user-attachments/assets/25bb4f8e-aa0e-4d6d-ba4f-619e311c19e2)
 
@@ -70,3 +70,15 @@ pip install -r requirements.txt
 ```
 streamlit run app.py
 ```
+
+##  How to Deploy on Streamlit Cloud
+
+1. Push your code to a public GitHub repository.
+2. Go to [streamlit.io/cloud](https://streamlit.io/cloud) and sign in with GitHub.
+3. Click **"New app"** → select your repo, branch, and `app.py` file.
+4. Click **"Deploy"** — that’s it! Your app will be live.
+
+   
+##  Live Demo
+
+Access the deployed app here: [Chat with Multiple PDFs (Demo)](https://rag-pdf-chatbot-app.streamlit.app/)
