@@ -1,0 +1,38 @@
+Question,Answer,Model,Timestamp,PDF Name
+How SVM performs for  Linearly Separable Data and Non Linearly Separable Data,"**For Linearly Separable Data:**
+
+1.  **Finds the optimal hyperplane:** SVM identifies the best hyperplane that perfectly separates the two classes of data.
+2.  **Uses support vectors to calculate the margin:**  The margin is the distance between the hyperplane and the nearest data points (support vectors). These support vectors are the data points closest to the hyperplane and are crucial in defining the hyperplane's position.
+3.  **Maximizes margin for better generalization:** SVM aims to maximize the margin to improve the model's ability to generalize to unseen data. A larger margin indicates a more robust separation between classes, reducing the risk of misclassification on new data.
+
+
+**For Non-Linearly Separable Data:**
+
+SVM employs the ""kernel trick"" to handle data that cannot be separated linearly in its original feature space.
+
+*   **Kernel Trick:** The data is transformed into a higher-dimensional space where a linear separator *can* be found.  The example provided illustrates a circular pattern in 2D being mapped to 3D, allowing for separation by a plane (a hyperplane in 3D).
+
+*   **Common Kernels:** Several kernel functions facilitate this transformation, including:
+    *   Linear
+    *   Polynomial
+    *   RBF (Radial Basis Function) –  This is explicitly mentioned as being used in the provided text.
+    *   Sigmoid
+
+The process then follows the same steps as with linearly separable data: finding the optimal hyperplane in the higher-dimensional space, using support vectors to define the margin, and maximizing that margin for better generalization.",Google AI,16-06-2025 10:23,"Feature Selection and Engineering.pdf, SUPPORT VECTOR MACHINE.pdf"
+List and summarize the concepts in Feature Selection Document,"The Feature Selection document covers the following concepts:
+
+**1. Model-Based Feature Selection:** This method selects features based on their importance scores.  Features with importance scores below the average importance score are dropped.
+
+**2. Variance Inflation Factor (VIF):** VIF measures the correlation between features.  A high VIF (>5 or 10) indicates high multicollinearity, which can destabilize regression models.  A low VIF (~1) suggests low correlation (good), while a moderate VIF (1-5) indicates some acceptable correlation.
+
+**3. Feature Engineering:** This section describes techniques for handling missing data.  These include dropping rows or columns with missing values and filling missing numerical values with the mean of the respective column (`Df.fillna(df2.mean())`).  The document also mentions handling missing categorical columns but doesn't detail the specific methods.  It notes dropping columns with more than 80% null values.
+
+**4.  Methods for Feature Ranking:** The document lists several methods for feature ranking, including Random Forest/XGBoost (providing importance scores between 0 and 1), SelectKBest (using F-scores), and SHAP (providing individual feature impact).
+
+**5. Correlation Matrix:** A correlation matrix displays the correlation coefficients between multiple variables, helping to understand feature relationships and their relation to the target variable.  The document notes a visualization where values closer to 0 are black, and values further from 0 are white.
+
+**6. Handling Missing Values:** The document describes identifying null values using `Data.isnull()` (producing a boolean table) and counting them with `data.isnull().sum`.
+
+**7. Dropping Constant Features:** Features with near-constant values (low variance) are identified and removed.  The document mentions Variance Threshold as a technique for this.
+
+**8. Recursive Feature Elimination (RFE):** RFE is a method to reduce the number of features to a specified `N_features_to_select`.  It outputs a boolean array (`Ref.support_`) indicating which features are selected.",Google AI,16-06-2025 10:25,"Feature Selection and Engineering.pdf, SUPPORT VECTOR MACHINE.pdf"
